@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/osallam-web/tinyapp/issues"
   },
-  "homepage": "https://github.com/osallam-web/tinyapp#readme"
+  "homepage": "https://github.com/osallam-web/tinyapp#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
