@@ -34,6 +34,11 @@ app.get("/urls/:id", (req, res) => {
   res.render("urls_show", templateVars);
 });
 
+app.post("/urls:id", (req, res) => {
+  delete { id: req.params.id, longURL: urlDatabase[req.params.id]};
+  res.redirect("urls_index", urls_index); // redirect to urls_index
+});
+
 app.get("/u/:id", (req, res) => {
   const longURL = urlDatabase[req.params.id]; //hope this works!
   res.redirect(longURL);
